@@ -12,14 +12,17 @@ import { BaseHttpService } from './core/basehttp.service';
 import { EditDictionaryService } from './edit-dictionary/edit-dictionary.service';
 import { LoginService } from './login/login.service';
 import { RegistrationComponent } from './registration/registration.component';
-import {RegistrationService} from './registration/registration.service'
+import {RegistrationService} from './registration/registration.service';
+import { DictionaryComponent } from './dictionary/dictionary.component'
+import { DictionaryService } from './dictionary/dictionary.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     EditDictionaryComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    DictionaryComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import {RegistrationService} from './registration/registration.service'
   providers: [BaseHttpService, 
               EditDictionaryService,
               LoginService,
-              RegistrationService
+              RegistrationService,
+              DictionaryService
   ],
   bootstrap: [AppComponent]
 })

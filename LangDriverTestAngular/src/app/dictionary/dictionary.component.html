@@ -1,0 +1,20 @@
+<div class="dictionary-content jumbotron">
+  <div class="container">
+      <div class="title">
+          <h1><p>Dictionary<p></h1>
+            <hr>
+        </div>
+        <div class="words-count-container col-md-12">
+            <span class="badge badge-info  words-count">Words in your dictionary: {{countOfWords}}</span>
+        </div>  
+        <div class="col-md-6 left-panel">
+            <input class="out-word form-control" readonly="readonly" onFocus="this.blur()" [(ngModel)] = "word"/>
+            <button class="btn btn-success" (click)="nextWord()">Next</button>
+        </div>
+        <div class="col-md-6 right-panel">
+            <input class="translate form-control" readonly="readonly" onFocus="this.blur()" [(ngModel)] = "translate"/>  
+            <button class="btn btn-success" (click)="getTranslate()">Translate</button>
+            <button class="btn btn-info help-button" (click)="help()">Help</button>
+        </div>  
+  </div>  
+</div>

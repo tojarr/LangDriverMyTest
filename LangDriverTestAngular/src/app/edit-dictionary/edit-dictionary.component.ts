@@ -22,8 +22,9 @@ export class EditDictionaryComponent implements OnInit {
   }
 
   getDictionary(){
-    console.log('getDictionary');
-    this.editDictionaryService.getDictionary(this.userId).subscribe(res => this.dictionary = res);
+    this.editDictionaryService.getDictionary(this.userId).subscribe(res => {this.dictionary = res;
+      this.DictionaryToLocalStorage(this.dictionary);
+    });
   }
 
   // AddWordToDictionary(){
@@ -48,6 +49,7 @@ export class EditDictionaryComponent implements OnInit {
           // item.wordOrigin = this.inputWord;
           this.inputTranslate = '';
           this.inputWord = '';
+          this.DictionaryToLocalStorage(res);
         }
       });
     } else {
@@ -62,6 +64,7 @@ export class EditDictionaryComponent implements OnInit {
           //this.dictionary.push({wordOrigin: this.inputWord, translate: this.inputTranslate});
           this.inputTranslate = '';
           this.inputWord = '';
+          this.DictionaryToLocalStorage(res);
         }
       });      
     }
@@ -77,6 +80,13 @@ export class EditDictionaryComponent implements OnInit {
 
   DeleteWord(word){
     console.log('DeleteWord');
-    this.editDictionaryService.DeleteWord(word.userId, word.id).subscribe(res => this.dictionary = res);
+    this.editDictionaryService.DeleteWord(word.userId, word.id).subscribe(res => {this.dictionary = res;
+      this.DictionaryToLocalStorage(res);
+    });
+  }
+
+  DictionaryToLocalStorage(dictionary:any){
+    localStorage.setItem('Dictionary', JSON.stringify(dictionary));
+    console.log(JSON.parse(localStorage.getItem('Dictionary')));
   }
 }

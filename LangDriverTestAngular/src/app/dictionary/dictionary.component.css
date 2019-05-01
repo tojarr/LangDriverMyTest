@@ -1,0 +1,37 @@
+.right-panel{
+    float: left;
+    margin-bottom: 10px;
+}
+
+.left-panel{
+   float: left;
+   margin-bottom: 10px;
+}
+
+.out-word, .translate{
+    margin: 0 0 15px 0;
+    height: 100px;
+    font-size: 50px;
+}
+
+.dictionary-content{
+    height: 520px;
+    padding-top: 40px ;
+}
+
+.help-button{
+    margin-left: 10px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.words-count{
+    font-weight: bold;
+}
+
+.words-count-container{
+    margin-bottom: 10px;
+}
