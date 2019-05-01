@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LangDriver.Common\LangDriver.Common.csproj" />
+    <ProjectReference Include="..\LangDriver.DataAccess\LangDriver.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>

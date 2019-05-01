@@ -1,0 +1,44 @@
+﻿.logout-container {
+    float: right;
+    color: white;
+    font-size: 14px;
+    vertical-align: middle;
+    display: flex;
+}
+
+.logout-container > * {
+    padding: 15px;
+}
+
+.login-form {
+    display: flex;
+    height: calc(100vh - 200px);
+}
+    .login-form > form {
+        margin:auto; 
+    }
+
+    .login-form .input-block {
+        display: flex;
+        flex-direction:row;
+        padding:15px;
+    }
+
+    .login-form  button{ 
+        margin:auto;
+    }
+
+    .login-form label {
+        width: 150px;
+    }
+
+    .login-form .title {
+        font-weight:bold;
+        font-size:24px;
+    }
+
+.finger-pointer {
+    cursor: pointer;
+}
+
+

@@ -1,0 +1,68 @@
+﻿@model IList<LangDriver.Common.Models.Word>
+
+@{
+    ViewData["Title"] = "TrainWords";
+}
+
+
+
+<div class="jumbotron dictionary-content">
+    <div class="container">
+        <div class="title">
+            <h1>Learn Words</h1>
+            <hr>
+        </div>
+        @*<p style="text-align:center; font-size:24px;">This content is not yet available.</p>*@
+
+        <div class="words-count-container col-md-12">
+            <span class="badge badge-info  words-count">Words in your dictionary: @Model.Count()</span>
+        </div>
+        <div class="col-md-6 left-panel">
+            <input class="out-word form-control" readonly="readonly" onFocus="this.blur()" id="eng-wordInput" />
+            <button class="btn btn-success" onclick="getNextWord()">Next</button>
+        </div>
+        <div class="col-md-6 right-panel">
+            <input class="translate form-control" readonly="readonly" onFocus="this.blur()" id="rus-wordInput" />
+            <button class="btn btn-success" onclick="getTranslate()">Translate</button>
+            <button class="btn btn-info help-button" onclick="getSimbol()">Help</button>
+        </div>
+    </div>
+</div>
+
+
+
+    <script>
+        var index = 0;
+        var listWords = @Html.Raw(Json.Serialize(Model));
+        var translate = "";
+        var simbolIndex = 0;
+        var word = "";
+        document.addEventListener("DOMContentLoaded", function (event) {
+            getNextWord();
+        });
+        function getNextWord() {
+            simbolIndex = 0;
+            word = "";
+            $("#eng-wordInput").val(listWords[index].wordEng);
+            translate = listWords[index].wordRus;
+            if (index === listWords.length - 1) {
+                index = 0;
+            } else {
+                index++;
+            }
+            $("#rus-wordInput").val("");
+        }
+        function getTranslate() {
+            $("#rus-wordInput").val(translate);
+        }
+        function getSimbol() {
+            if (simbolIndex < translate.length && $("#rus-wordInput").val().length != translate.length) {
+                word += translate[simbolIndex];
+                $("#rus-wordInput").val(word);
+                simbolIndex++;
+            }
+        }
+    </script>
+
+
+

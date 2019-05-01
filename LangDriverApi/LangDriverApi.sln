@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangDriverApi", "LangDriverApi\LangDriverApi.csproj", "{D7141FD2-2857-485E-BB81-29DF52CD5966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangDriverApi.BusinesLogic", "LangDriverApi.BusinesLogic\LangDriverApi.BusinesLogic.csproj", "{99D2C465-CD79-4E0C-B424-37F4E0950698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangDriverApi.DataAccess", "LangDriverApi.DataAccess\LangDriverApi.DataAccess.csproj", "{2D82206F-884E-4388-ADAF-C506A13AA71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangDriverApi.Common", "LangDriverApi.Common\LangDriverApi.Common.csproj", "{7771F604-2F80-48BF-92EA-9EDAF87B8CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LangDriverApi.IoC", "LangDriverApi.IoC\LangDriverApi.IoC.csproj", "{C62251E5-A88F-4E8A-B5CB-152FAB33B677}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7141FD2-2857-485E-BB81-29DF52CD5966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7141FD2-2857-485E-BB81-29DF52CD5966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7141FD2-2857-485E-BB81-29DF52CD5966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7141FD2-2857-485E-BB81-29DF52CD5966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D2C465-CD79-4E0C-B424-37F4E0950698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D2C465-CD79-4E0C-B424-37F4E0950698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D2C465-CD79-4E0C-B424-37F4E0950698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D2C465-CD79-4E0C-B424-37F4E0950698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D82206F-884E-4388-ADAF-C506A13AA71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D82206F-884E-4388-ADAF-C506A13AA71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D82206F-884E-4388-ADAF-C506A13AA71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D82206F-884E-4388-ADAF-C506A13AA71C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7771F604-2F80-48BF-92EA-9EDAF87B8CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7771F604-2F80-48BF-92EA-9EDAF87B8CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7771F604-2F80-48BF-92EA-9EDAF87B8CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7771F604-2F80-48BF-92EA-9EDAF87B8CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62251E5-A88F-4E8A-B5CB-152FAB33B677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62251E5-A88F-4E8A-B5CB-152FAB33B677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62251E5-A88F-4E8A-B5CB-152FAB33B677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62251E5-A88F-4E8A-B5CB-152FAB33B677}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13591663-A2DD-47C2-A3F5-8C125F367AC7}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.StandardHeader = $2
+		$0.VersionControlPolicy = $3
+	EndGlobalSection
+EndGlobal

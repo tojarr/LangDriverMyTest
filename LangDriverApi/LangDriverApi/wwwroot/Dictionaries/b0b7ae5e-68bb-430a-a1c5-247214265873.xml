@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfWord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Word>
+    <Id>1c6fcdfd-ce2f-4ced-b501-5768697b43a7</Id>
+    <WordRus>Собака</WordRus>
+    <WordEng>Dog</WordEng>
+  </Word>
+  <Word>
+    <Id>3ca44e16-c968-4bd2-87fe-2e9192ae0a77</Id>
+    <WordRus>Кошка</WordRus>
+    <WordEng>Cat</WordEng>
+  </Word>
+  <Word>
+    <Id>146b3400-7ae4-4d94-afad-e1a564c359d1</Id>
+    <WordRus>string</WordRus>
+    <WordEng>string</WordEng>
+  </Word>
+  <Word>
+    <Id>b0b7ae5e-68bb-430a-a1c5-247214265871</Id>
+    <WordRus>st2ring11</WordRus>
+    <WordEng>s1tring1</WordEng>
+  </Word>
+</ArrayOfWord>
