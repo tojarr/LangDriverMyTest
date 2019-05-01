@@ -1,0 +1,60 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top nav-border">
+    <span class="navbar-brand" style="padding-bottom: 10px;">Lang Driver</span>
+    <!-- Links -->
+    <ul class="navbar-nav nav-left">
+      <li class="nav-item" *ngIf="isLoged">
+        <a class="nav-link" routerLink="/editDictionary">Edit my dictionary&nbsp;&nbsp;&nbsp;&nbsp;|</a>
+      </li>
+      <li class="nav-item" *ngIf="isLoged">
+        <a class="nav-link" routerLink="/dictionary">Dictionary</a>
+      </li>
+      <li class="nav-item" *ngIf="isAdmin && isLoged">
+          <div class="dropdown open">
+              <a class="nav-link dropdown-toggle finger-pointer" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                | &nbsp;&nbsp; Admin menu
+              </a>
+              <div class="dropdown-menu" style="background-color: #343a40; color: white; border: none" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+        </li>
+    </ul>
+    <!-- <label for="test" style="color: white; margin-top: auto; margin-bottom: auto; margin-right: 10px">Admin test</label>
+    <input type="checkbox" id="test" style="margin-right: 50px" [(ngModel)] = "isAdmin">
+    <label for="test" style="color: white; margin-top: auto; margin-bottom: auto; margin-right: 10px">Login test</label>
+    <input type="checkbox" id="test" style="margin-right: 50px" [(ngModel)] = "isLoged"> -->
+    <div class="login navbar-nav">
+        <a *ngIf="!isLoged" class="nav-link" routerLink="">Login</a>
+        <a *ngIf="!isLoged" class="nav-link" routerLink="registration">Registration</a>
+        <div *ngIf="isLoged" class="navbar-nav">
+          <div class="dropdown open">
+            <a class="nav-link dropdown-toggle finger-pointer" style="color: white" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 {{userName}}
+            </a>
+            <div class="dropdown-menu" style="background-color: #343a40; color: white; border: none" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Account</a>
+              <a class="dropdown-item" (click)="logOut()" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </nav>
+  <div class="body-content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <hr />
+
+  <div class="footer">
+      <p>&copy;2019 Lang Driver Test</p>
+  </div>
+</div>

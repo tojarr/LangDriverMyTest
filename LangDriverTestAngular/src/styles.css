@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+  }
+
+  body{
+      background-color: black;
+      background-image: url("../src/assets/Images/background.jpg");
+      background-repeat: repeat-y;
+      background-position: center;
+      background-size: cover;
+  }
+
+  .finger-pointer{
+    cursor: pointer;
+  }

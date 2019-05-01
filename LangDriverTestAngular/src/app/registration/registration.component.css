@@ -1,0 +1,24 @@
+.btn-block{
+    text-align: center;
+}
+
+.invalid-input {
+    border:solid red 1px;
+}
+.valid-input {
+    border:solid lightgreen 2px;
+}
+
+.btn-reg{
+    margin-right: 20px;
+}
+
+.paas-hint{
+    font-size: 10px;
+}
+
+#registration-column{
+    border: 1px lightgray solid;
+    padding: 15px;
+    border-radius: 5px;
+}

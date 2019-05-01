@@ -1,0 +1,33 @@
+.body-content{
+    padding: 15px;
+}
+
+.footer{
+    text-align: center;
+}
+
+.nav-border{
+    border-radius: 0 0 5px 5px;
+}
+
+.nav-left{
+    margin-right: auto!important;
+}
+
+.dropdown-menu a:hover{
+    background-color: grey;
+}
+
+.dropdown-menu a{
+    color: white;
+}
+
+.navbar-nav label{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+}
+
+.btn-logout{
+    cursor: pointer;
+}
